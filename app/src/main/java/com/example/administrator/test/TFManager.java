@@ -83,11 +83,11 @@ public class TFManager {
         }catch (IOException e){
             Log.d(TAG, e.toString());
         }
-        mOpenCVManager.start();
+        mOpenCVManager.init();
     }
 
    public void start(){
-       mOpenCVManager.start();
+       mOpenCVManager.init();
    }
 
    public void resume(){
@@ -106,7 +106,7 @@ public class TFManager {
         mOpenCVManager.mLoaderCallback = loaderCallback;
    }
 
-   public void setCameraBridgeViewBase(CameraBridgeViewBase mOpenCvCameraView){
+   public void setCameraBridgeViewBase(CameraBridgeViewBase mOpenCvCameraView){             //设置CameraBrigeViewBase的监听器
         mOpenCVManager.mOpenCvCameraView = mOpenCvCameraView;
    }
 

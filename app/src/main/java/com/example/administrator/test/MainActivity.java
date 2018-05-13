@@ -28,8 +28,6 @@ public class MainActivity extends Activity implements CvCameraViewListener2 {
         System.loadLibrary(TFManager.LIBRARYLOCATION);
     }
 
-    private static final String TAG = "Opencv_test" ;
-
     private CameraBridgeViewBase mOpenCvCameraView;     //将传递给TFManager对象
 
     private TFManager mTFManager;
@@ -48,8 +46,6 @@ public class MainActivity extends Activity implements CvCameraViewListener2 {
         initViews();
         initWithTensorflow();    //由于要传递OpenCvCameraView对象，所以initWithTensorflow必须在initViews后面执行
     }
-
-
 
     private void initViews(){
         mOpenCvCameraView = (CameraBridgeViewBase) findViewById(R.id.tutorial1_activity_java_surface_view);

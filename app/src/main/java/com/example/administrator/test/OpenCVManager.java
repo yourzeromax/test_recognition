@@ -16,7 +16,7 @@ public class OpenCVManager {
 
     private Context context;
 
-    public void start(){
+    public void init(){
         if (!OpenCVLoader.initDebug()) {
             Log.d(TAG, "Internal OpenCV library not found. Using OpenCV Manager for initialization");
             OpenCVLoader.initAsync(OpenCVLoader.OPENCV_VERSION_3_2_0, context, mLoaderCallback);
@@ -28,7 +28,7 @@ public class OpenCVManager {
     }
 
     public void resume(){
-        start();
+        init();
     }
 
     public void pause(){
