@@ -1,0 +1,5 @@
+# test_recognition
+物体识别
+
+这个demo是在Google camp训练营进修学习时候，根据老师传授的知识而成的，主要完成openCV通过摄像头采集即时的视频数据，结合tensorflow进行物体识别的功能。
+是一个非常适合机器学习和图像处理入门的demo程序。欢迎大家fork和star
